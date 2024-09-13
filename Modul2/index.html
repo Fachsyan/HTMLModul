@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul 2 - Fachsyan Rajendra Ismail</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <audio id="myAudio" style="display: none" controls></audio>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="images/logo-nav.png"
+            alt="logo-images"
+            class="sticker-hu"
+            onclick="playRandomAudio()"
+          />
+        </div>
+
+        <ul class="sidebar">
+          <li class="nav-links" id="closeMenu">
+            <p href="#" class="link">
+              <ion-icon name="close-outline"></ion-icon>
+            </p>
+          </li>
+          <li class="nav-links">
+            <a href="#" class="link">Pengantar</a>
+          </li>
+          <li class="nav-links">
+            <a href="#teori-dasar" class="link">Materi</a>
+          </li>
+          <li class="nav-links">
+            <a href="#author" class="link">Tentang Kami</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="nav-links">
+            <a href="#" class="link">Pengantar</a>
+          </li>
+          <li class="nav-links">
+            <a href="#teori-dasar" class="link">Materi</a>
+          </li>
+          <li class="nav-links">
+            <a href="#author" class="link">Tentang Kami</a>
+          </li>
+          <li class="nav-links" id="hamMenu">
+            <p href="#" class="link">
+              <ion-icon name="menu-outline"></ion-icon>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="grid-box">
+          <div class="hero-banner">
+            <img
+              src="images/hu-banner.png"
+              alt=""
+              class="banner-hu"
+              onclick="playRandomAudio()"
+            />
+          </div>
+          <div class="hero-desc">
+            <h2 class="head-text">Kemampuan Yang Diharapkan Dari Modul Ini!</h2>
+            <p class="head-desc">
+              Kamu ingin mengerti bentuk CSS dan elemen HTML? Baiklah, mari kita
+              menyelam dalam dunia desain web! CSS itu seperti pakaian untuk
+              halaman web, memberi gaya dan warna. HTML adalah kerangka, dan
+              elemen form HTML5 itu seperti pintu yang bisa diklik dan diisi.
+              Untuk mengujicobakan program, kita seperti berlatih dengan alat
+              baru—periksa semua fungsinya dan diskusikan hasilnya. Dalam
+              membuat program singkat, kita gunakan struktur dan atribut HTML
+              sebagai fondasi, seperti membuat potongan kecil dari arsitektur
+              megah.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="container" id="teori-dasar">
+        <div class="head">
+          <div class="text">
+            <h2 class="head-text">Dasar Teori</h2>
+            <p class="head-desc">
+              Selamat datang, pengunjung yang terhormat! siap mengungkapkan
+              rahasia sihir di balik tampilan halaman web! Mari kita mulai
+              dengan CSS, yang singkatan dari Cascading Style Sheets, atau dalam
+              bahasa sehari-hari, Sihir Pengatur Gaya. CSS adalah alat ajaib
+              yang memungkinkan kita mendandani elemen-elemen HTML sehingga
+              tampil menawan di layar, kertas, atau media lain!
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="images/teaching-hutao.png"
+              alt="HuTao Teaching"
+              class="sticker-hu"
+              onclick="playRandomAudio()"
+            />
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="items-materi">
+            <h2 class="items-head">Inline CSS</h2>
+            <p class="items-icon">
+              <ion-icon name="code-working-outline"></ion-icon>
+            </p>
+            <p class="items-desc">
+              Haiyaa, menggunakan <i>inline</i> CSS itu seperti kalau kamu pakai
+              aksesori langsung di pakaian. Misalnya, kamu mau ubah warna font
+              atau gaya tulisan langsung di satu elemen. Tidak praktis kalau
+              kamu sering menggunakannya.
+            </p>
+          </div>
+          <div class="items-materi">
+            <h2 class="items-head">Internal CSS</h2>
+            <p class="items-icon">
+              <ion-icon name="code-outline"></ion-icon>
+            </p>
+            <p class="items-desc">
+              Ahh, ini seperti mengatur satu setelan khusus untuk satu ruangan
+              saja! Kamu bisa menaruh CSS di <i>head</i> dokumen HTML. Jadi,
+              setiap elemen dalam halaman itu bisa menggunakan aturan yang sudah
+              kamu atur.
+            </p>
+          </div>
+          <div class="items-materi">
+            <h2 class="items-head">External CSS</h2>
+            <p class="items-icon">
+              <ion-icon name="copy-outline"></ion-icon>
+            </p>
+            <p class="items-desc">
+              Nah, ini yang paling keren menurutku! Seperti mempersiapkan kostum
+              untuk setiap orang dalam seluruh kota! Kamu bisa membuat satu file
+              CSS terpisah, dan setiap halaman bisa pakai file itu. Praktis,
+              kan?
+            </p>
+          </div>
+        </div>
+
+        <h2 class="head-text">Berikut Contoh Code!</h2>
+
+        <div class="accordion">
+          <div class="accordion-items">
+            <div class="accordion-items-header">
+              Inline CSS <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="accordion-items-content">
+              <div class="accordion-items-desc">
+                <img
+                  src="images/code-images/inlineCSS.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+                <ul>
+                  <li>
+                    <b>Kelebihan:</b> Langsung terlihat, mudah untuk perubahan
+                    cepat.
+                  </li>
+                  <li>
+                    <b>Kekurangan:</b> Sulit diatur kalau terlalu banyak, dan
+                    bisa membuat HTML berantakan. Aduh, susah deh nanti
+                    ngurusnya kalau semua mendadak! Hehe~
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-items">
+            <div class="accordion-items-header">
+              Internal CSS <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="accordion-items-content">
+              <div class="accordion-items-desc">
+                <img
+                  src="images/code-images/internalCSS.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+                <ul>
+                  <li>
+                    <b>Kelebihan:</b> Mudah digunakan kalau kamu hanya ingin
+                    mengatur satu halaman.
+                  </li>
+                  <li>
+                    <b>Kekurangan:</b> Tapi kalau ada banyak halaman? Wah, bisa
+                    repot! Jadi, hanya cocok untuk halaman tunggal.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-items">
+            <div class="accordion-items-header">
+              External CSS <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="accordion-items-content">
+              <div class="accordion-items-desc">
+                <img
+                  src="images/code-images/externalCSS.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+                <ul>
+                  <li>
+                    <b>Kelebihan:</b> Sangat terorganisir, bisa digunakan di
+                    banyak halaman. Lebih efisien kalau proyekmu besar.
+                  </li>
+                  <li>
+                    <b>Kekurangan:</b> Kalau filenya hilang atau rusak, semua
+                    gaya halamanmu juga hilang deh, hehe. Tapi tenang saja, asal
+                    hati-hati semuanya bisa berjalan lancar!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="other-materi">
+          <div class="content">
+            <div class="content-head">
+              <img
+                src="images/css-fonts.png"
+                alt="Hu tao Teaching"
+                class="sticker-hu"
+                onclick="playRandomAudio()"
+              />
+              <h2 class="head-text">CSS Fonts</h2>
+            </div>
+            <div class="content-body">
+              <div class="code">
+                <img
+                  src="images/code-images/cssFonts.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+              </div>
+              <div class="text">
+                <p>
+                  Hehe, ini ibarat memilih gaya pakaian! Kalau kamu mau teksnya
+                  tampil dengan gaya dan warna yang keren, gunakan properti
+                  <i>CSS Fonts</i>.
+                </p>
+                <ul>
+                  <li>
+                    <b>Color: </b>Wah, ini seperti memilih warna untuk gaun
+                    favoritmu! Properti ini menentukan warna teks. Misalnya,
+                    kamu ingin warna teks biru dingin, ya tinggal atur saja.
+                  </li>
+                  <li>
+                    <b>Font Family: </b> Hmmm, bagaimana kalau kita pilih gaya
+                    huruf yang cocok? Properti ini mengatur tipe hurufnya.
+                    Misalnya, kamu bisa pakai yang klasik atau yang menyeramkan,
+                    tergantung selera.
+                  </li>
+                  <li>
+                    <b>Font Size: </b> Wah, ini yang menentukan seberapa besar
+                    atau kecil tulisanmu! Mau teks yang besar seperti judul
+                    artikel, atau yang kecil-kecil? Hehe, tinggal atur.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-head">
+              <h2 class="head-text">Elemen Layout HTML</h2>
+              <img
+                src="images/layout-html.png"
+                alt="Hu tao Teaching"
+                class="sticker-hu"
+                onclick="playRandomAudio()"
+              />
+            </div>
+            <div class="content-body">
+              <div class="code">
+                <img
+                  src="images/code-images/layoutHTML.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+              </div>
+              <div class="text">
+                <p>
+                  Wah, elemen layout ini seperti bagian-bagian berbeda dalam
+                  upacara besar di Wangsheng. Kita punya ruang utama, ruang
+                  kecil, dan tempat-tempat khusus, seperti di sini:
+                </p>
+                <ul>
+                  <li>
+                    <b>Header: </b>Ini kepala dokumen atau bagian teratas. Ya
+                    seperti gerbang utama upacara, penuh wibawa.
+                  </li>
+                  <li>
+                    <b>Nav: </b> Nah, di sini semua navigasi untuk para tamu,
+                    seperti peta jalur menuju kuil, eh... maksudku, link ke
+                    halaman lainnya.
+                  </li>
+                  <li>
+                    <b>Section: </b> Ini untuk membagi isi dokumen menjadi
+                    beberapa bagian. Hmm, bayangkan kamu sedang membagi ruangan
+                    besar jadi beberapa ruang untuk ritual berbeda!
+                  </li>
+                  <li>
+                    <b>Article: </b> Bagian ini mandiri, seperti artikel di
+                    surat kabar. Bisa berdiri sendiri seperti pidato yang
+                    kutawarkan pada setiap pengunjung.
+                  </li>
+                  <li>
+                    <b>Aside: </b> Ah, ini bagian tambahan, seperti tempat minum
+                    teh atau ruang obrolan ringan di samping. Sidebar di halaman
+                    web!
+                  </li>
+                  <li>
+                    <b>Footer: </b> Ini penutup di bagian bawah, ibarat kata
+                    terakhir saat upacara selesai.
+                  </li>
+                  <li>
+                    <b>Details Dan Summary: </b> Ini untuk menyembunyikan dan
+                    menampilkan detail, seperti rahasia upacara! Hehe, orang
+                    bisa klik untuk melihat lebih banyak!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-head">
+              <img
+                src="images/datalist-html.png"
+                alt="Hu tao Teaching"
+                class="sticker-hu"
+                onclick="playRandomAudio()"
+              />
+              <h2 class="head-text">Elemen <i>datalist</i> dari HTML5</h2>
+            </div>
+            <div class="content-body">
+              <div class="code">
+                <img
+                  src="images/code-images/datalistHTML.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+              </div>
+              <div class="text">
+                <p>
+                  Sekarang, mari kita bicarakan tentang formulir~ini seperti
+                  mengundang tamu ke acara khusus! Hehe, HTML5 punya elemen baru
+                  yang menarik:
+                </p>
+                <ul>
+                  <li>
+                    <b>Datalist: </b>Ini seperti memberi tamu daftar pilihan
+                    makanan yang sudah disiapkan. Kamu bisa menyediakan pilihan
+                    yang telah ditentukan untuk mereka pilih dari input.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="content-head">
+              <h2 class="head-text">HTML5 <i>keygen</i> Element</h2>
+              <img
+                src="images/keygen-html.png"
+                alt="Hu tao Teaching"
+                class="sticker-hu"
+                onclick="playRandomAudio()"
+              />
+            </div>
+            <div class="content-body">
+              <div class="code">
+                <img
+                  src="images/code-images/keygenHTML.png"
+                  alt="Some Code"
+                  class="code-img"
+                />
+              </div>
+              <div class="text">
+                <p>
+                  Sekarang, mari kita bicarakan tentang formulir~ini seperti
+                  mengundang tamu ke acara khusus! Hehe, HTML5 punya elemen baru
+                  yang menarik:
+                </p>
+                <ul>
+                  <li>
+                    <b>Keygen: </b> Ini bagian keamanan upacara! Elemen ini
+                    membangkitkan kunci untuk autentikasi tamu dengan aman.
+                    Seperti memberikan mereka kunci rahasia yang hanya bisa
+                    digunakan oleh mereka. Kunci privat untuk mereka, kunci
+                    publik untuk kami di server.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="author" id="author">
+        <div class="content">
+          <figure
+            class="author-banner img-holder"
+            style="--width: 700; --height: 720"
+          >
+            <img
+              src="images/background-images/HuTaoArt3.jpg"
+              width="700"
+              height="720"
+              loading="lazy"
+              alt="TeamPhoto"
+              class="img-cover"
+            />
+          </figure>
+
+          <div class="author-content">
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Tugas Modul HTML 2</h2>
+
+            <p class="author-name">Fachsyan Rajendra Ismail</p>
+
+            <div class="section-text">
+              <b>Tugas:</b> <br />
+              Buatlah Website yang memuat semua materi dari modul ini, dan
+              buatlah sekreatif mungkin dengan topik “About Us”, serta
+              menghosting website tersebut pada domain gratis
+              (www.hostingers.co.id) . <br />
+              *Contoh website : www.newbee.hol.es*
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="column">
+        <div class="logo">
+          <img
+            src="images/footer-hu.png"
+            alt="Hu Tao Logo Picture"
+            class="sticker-hu"
+            onclick="playRandomAudio()"
+          />
+        </div>
+        <p>
+          Hehe, terima kasih sudah belajar bersama Hu Tao! 🌸 Ingat, website
+          yang keren itu seperti upacara sukses—terorganisir dan menarik! Kalau
+          butuh bantuanku lagi, jangan ragu untuk kembali ya. Ingat, hidup itu
+          singkat, jadi mari kita bersenang-senang sambil belajar! Sampai jumpa
+          lagi~ ✨👻
+        </p>
+        <div class="socials">
+          <a href="https://www.facebook.com/fachsyan.ismail" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://www.instagram.com/rajendrayayan12/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <div class="column">
+        <h4>Contacts</h4>
+        <a href="https://wa.link/ig14wh" target="_blank">Whats App</a>
+        <a href="http://t.me/Fachsyan" target="_blank">Telegram</a>
+        <a href="http://discordapp.com/users/302037355068522498" target="_blank"
+          >Discord</a
+        >
+      </div>
+    </footer>
+
+    <div class="copyright">
+      Copyright © 2024 By Mosaku. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
